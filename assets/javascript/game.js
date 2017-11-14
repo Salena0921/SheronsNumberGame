@@ -43,6 +43,7 @@ $("#crystal1").on("click", function(){
     document.getElementById("totalcount").textContent = totalCount
     console.log(totalCount)
     console.log(randomCrystal1);
+    winorlose();
 });
 
 $("#crystal2").on("click", function(){   
@@ -51,6 +52,7 @@ $("#crystal2").on("click", function(){
     totalCount += randomCrystal2
     console.log(randomCrystal2);
     document.getElementById("totalcount").textContent = totalCount
+    winorlose();
 });
 
 $("#crystal3").on("click", function(){
@@ -58,6 +60,7 @@ $("#crystal3").on("click", function(){
     $("#crystal3").append(imageCrystal3);
     totalCount += randomCrystal3
     document.getElementById("totalcount").textContent = totalCount
+    winorlose();
 });
 
 $("#crystal4").on("click", function(){
@@ -65,19 +68,22 @@ $("#crystal4").on("click", function(){
     $("#crystal4").append(imageCrystal4);
     totalCount += randomCrystal4
     document.getElementById("totalcount").textContent = totalCount
+    winorlose();
 });
 console.log("yeah");
-winorlose();
+
 };
 playGame();
 
 function winorlose(){
-
+    console.log("yea");
 if(totalCount === randomGuess){
-    powerUp += 1;
+    powerUp ++;
     document.getElementById("powerup").textContent = powerUp
+    
+    console.log(powerUp);
 }else if (totalCount > randomGuess){
-    powerDown += 1;
+    powerDown ++;
     document.getElementById("powerdown").textContent = powerDown
 };
 
