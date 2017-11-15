@@ -1,0 +1,9 @@
+body{
+    background-image: url("../images/Shenronbkg.jpg");
+    color: white;
+}
+
+.crystals{
+    width: 150px;
+    height: 150px;
+}
