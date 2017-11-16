@@ -1,5 +1,5 @@
 var powerUp = 0;
-var totalCount, randomGuess, randomCrystal1, randomCrystal2, randomCrystal3, randomCrystal4;
+var totalCount, randomGuess, randomCrystal1, randomCrystal2, randomCrystal3, randomCrystal4, randomCrystal5, randomCrystal6, randomCrystal7;
 
 
 // Setting up click events for the crystal divs
@@ -65,7 +65,9 @@ function winOrLose() {
         startGame();
         if(powerUp === 7){
             console.log("wish")
-            resetWholeGame();
+            $( "#wish" ).show();
+            
+           
         }
 
     } else if (totalCount > randomGuess) {
@@ -91,6 +93,8 @@ function startGame() {
     $("#totalcount").text(totalCount);
     $("#powerup").text(powerUp);  
     $("#numbertoguess").text(randomGuess);
+    $( "#wish" ).hide();
+    $("#wishes").hide();
 
     // playGame();
 };
@@ -112,3 +116,72 @@ function resetWholeGame(){
     $("#powerup").text(powerUp);  
     $("#numbertoguess").text(randomGuess);
 }
+
+$("#wish").on("click", function(){
+    
+    function startGame2() {
+        
+            // Math.floor(Math.random() * (max - min)) + min;
+            randomGuess = Math.floor(Math.random() * 101 + 19);
+            randomCrystal1 = Math.floor(Math.random() * 24 - 12);
+            randomCrystal2 = Math.floor(Math.random() * 11 + 1);
+            randomCrystal3 = Math.floor(Math.random() * 24 - 12);
+            randomCrystal4 = Math.floor(Math.random() * 11 + 1);
+            randomCrystal5 = Math.floor(Math.random() * 24 - 12);
+            randomCrystal6 = Math.floor(Math.random() * 11 + 1);
+            randomCrystal7 = Math.floor(Math.random() * 24 - 12);
+        
+            powerUp = 0;
+            totalCount = 0;
+            $("#totalcount").text(totalCount);
+            $("#powerup").text(powerUp);  
+            $("#numbertoguess").text(randomGuess);
+            $("#wishes").hide();
+            $("#wish").hide();
+            
+        
+            // playGame();
+    };
+    startGame2();
+        
+    function winOrLose2() {
+        console.log("check win");
+        console.log("totalCount:", totalCount);
+    
+        if (totalCount === randomGuess) {
+            console.log("you won");
+            powerUp++;
+            document.getElementById("powerup").textContent = powerUp;
+            console.log(powerUp);
+            resetWholeGame();
+            if(powerUp === 7){
+                console.log("wish")
+                $( "#wishes" ).show();          
+            
+            }
+    
+        } else if (totalCount > randomGuess) {
+            alert("you lost");
+            resetWholeGame();
+        };
+    
+    };
+
+    function resetWholeGame(){
+        randomGuess = Math.floor(Math.random() * 101 + 19);
+        randomCrystal1 = Math.floor(Math.random() * 11 + 1);
+        randomCrystal2 = Math.floor(Math.random() * 11 + 1);
+        randomCrystal3 = Math.floor(Math.random() * 11 + 1);
+        randomCrystal4 = Math.floor(Math.random() * 11 + 1);
+        randomCrystal5 = Math.floor(Math.random() * 11 + 1);
+        randomCrystal6 = Math.floor(Math.random() * 11 + 1);
+        randomCrystal7 = Math.floor(Math.random() * 11 + 1);
+    
+        powerUp = 0;
+        totalCount = 0;
+        $("#totalcount").text(totalCount);
+        $("#powerup").text(powerUp);  
+        $("#numbertoguess").text(randomGuess);
+    };
+    
+});

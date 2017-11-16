@@ -3,7 +3,63 @@ body{
     color: white;
 }
 
+h3{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Sonsie One', cursive;
+}
+
+#caption{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    font-family: 'Sonsie One', cursive;
+}
+
+.instruction{
+   font-size: 20px;
+   font-family: 'Lobster', cursive;
+   color: grey;
+   position: fixed;
+   width: 400px;
+}
+
+.score{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-size: 30px;
+    color: red;
+    font-family: 'Sonsie One', cursive;
+}
+
 .crystals{
     width: 150px;
     height: 150px;
+    position: relative;
+    left: 425px;
+    top: 150px;
+}
+
+#wish,
+#wishes{
+    width: 1000px;
+    height: 650px;
+    position: absolute;
+    top: 150px;
+    right: 450px;
+    text-align: center;
+    font-family: 'Sonsie One', cursive;
+}
+
+.guesscount{
+    position: relative;
+    bottom: -155px;
+    font-family: 'Sonsie One', cursive;
+}
+
+#totalcount{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Sonsie One', cursive;
 }

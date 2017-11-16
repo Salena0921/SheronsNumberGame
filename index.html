@@ -4,6 +4,8 @@
 <head>
     <title>Dragonball</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sonsie+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
 <body>
@@ -11,27 +13,36 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Shenron's Number Guess</h3>
+            <div id="caption">Will Shenron grant your wish?</div>
         </div>
-        <div class="panel-body">
-            Instructions:
-                
+        <div class="panel-body instruction">
+            Instructions: 
+            Shenron has decided to grant a wish to those who can use the Dragonballs to match his number. What you will have to 
+            do to gain that wish is to get your numbers to add up to Shenrons. Each dragonball has a random number attached to it. 
+            Click the Dragonball to add that number to your total guess. If you number matches Shenron's then you gain 1 power up
+            and if you gain 7 power ups you will win your wish.
+
+            However, if your number is greater then Shenron's then you lose and will have to start over at the beginning. 
+
+            So, be careful and good luck.
+
         </div>
     </div>
     <div class="panel panel-default">
-        <div class="panel-body">
-            <div>Will your power go up or down? Its all up to you</div>
+        <div class="panel-body score">            
             <div>
-                Power Up: 
+                Power Up:
                 <span id="powerup">0</span>
-            </div>            
+            </div>
         </div>
     </div>
     <div class="panel panel-default">
-        <div class="panel-body">
+        <div class="panel-body score">
             Number to Guess
             <div id="numbertoguess">0</div>
         </div>
     </div>
+   
     <div class="panel panel-default">
         <div class="panel-body">
             <img class="crystals" id="crystal1" src="assets/images/1star.jpg">
@@ -43,7 +54,7 @@
             <img class="crystals" id="crystal7" src="assets/images/7star.jpg">
         </div>
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-default guesscount">
         <div class="panel-heading">
             <h3 class="panel-title">Your Guess Count</h3>
         </div>
@@ -51,6 +62,14 @@
             <div id="totalcount">0</div>
         </div>
     </div>
+
+    <img src="assets/images/Shenronwish.jpg" class="img-responsive" id="wish" alt="Responsive image">
+    <img src="assets/images/Porungawish.jpg" class="img-responsive" id="wishes" alt="Responsive image">
+
+    <!-- <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+    </audio> -->
 
     <script src="assets/javascript/game2.js"></script>
 
