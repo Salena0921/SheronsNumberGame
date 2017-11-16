@@ -96,7 +96,7 @@ function startGame() {
     $( "#wish" ).hide();
     $("#wishes").hide();
 
-    // playGame();
+//     // playGame();
 };
 startGame();
 
