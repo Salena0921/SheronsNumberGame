@@ -120,7 +120,7 @@ function startGame() {
     $("#powerup").text(powerUp);  
     $("#numbertoguess").text(randomGuess);
     $( "#wish" ).hide();
-    $("#wishes").hide();
+    $("#play_again").hide();
 
 //     // playGame();
 };

@@ -131,6 +131,7 @@ body{
     top: 175px;
 }
 
+/* Winner image */
 #wish{
     width: 1000px;
     height: 650px;
@@ -139,6 +140,18 @@ body{
     right: 450px;
     text-align: center;
     font-family: 'Sonsie One', cursive;
+}
+
+#play_again{
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    font-family: 'Sonsie One', cursive;
+    position: absolute; 
+    left: 900px; 
+    bottom: 200px;  
+    width: 125px;
+    height: 75px;
 }
 
 
