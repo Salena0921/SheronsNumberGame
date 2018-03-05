@@ -11,52 +11,58 @@
 
 <body>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Shenron's Number Guess</h3>
-            <div id="caption">Will Shenron grant your wish?</div>
+            <h3 class="panel-title" id="game_title">Dragonball Number Guess</h3>
+            <div id="game_caption">Will Shenron grant your wish?</div>
         </div>
-        <div class="panel-body instruction">
-            Instructions: 
-            Shenron has decided to grant a wish to those who can use the Dragonballs to match his number. What you will have to 
-            do to gain that wish is to get your numbers to add up to Shenrons. Each dragonball has a random number attached to it. 
-            Click the Dragonball to add that number to your total guess. If you number matches Shenron's then you gain 1 power up
-            and if you gain 7 power ups you will win your wish.
+    </div>
 
-            However, if your number is greater then Shenron's then you lose and will have to start over at the beginning. 
-
-            So, be careful and good luck because if you get past Shenron you will enter Porunga's game. Once 
-            you hit 7 Power ups Sheron will appear. Click on Sheron to continue to Porunga's game. Be very careful
-            because some of Porunga's dragonballs will set you back in your count.
-
+    <button id="instructions_title">Instructions</button>
+    <div class="modal" id="instruction_modal">
+        <div class="modal-content" id="instructions">
+            <span class="close">&times;</span>
+            <p>
+                Shenron has decided to grant a wish to those who can use the Dragonballs to match his number.
+                <br> 
+                <br>
+                What you will have to do to gain that wish is to get your numbers to add up to Shenrons. Each dragonball has a random number attached
+                to it. Click the Dragonball to add that number to your total guess. If you number matches Shenron's then
+                you gain 1 power up and if you gain 7 power ups you will win your wish. However, if your number is greater
+                then Shenron's then you lose and will have to start over at the beginning. So, be careful and good luck because
+                if you get past Shenron you will enter Porunga's game. Once you hit 7 Power ups Sheron will appear and your wish
+                will be granted.
+            </p>
         </div>
     </div>
     <div class="panel panel-default">
-        <div class="panel-body score">            
+        <div class="panel-body score" id="powerup_title">
             <div>
                 Power Up:
                 <span id="powerup">0</span>
             </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-body score">
+    <div class="panel panel-default" id>
+        <div class="panel-body score" id="guessing_number">
             Number to Guess
             <div id="numbertoguess">0</div>
         </div>
     </div>
-   
+
     <div class="panel panel-default">
         <div class="panel-body">
-            <img class="crystals" id="crystal1" src="assets/images/1star.jpg">
-            <img class="crystals" id="crystal2" src="assets/images/2star.jpg">
-            <img class="crystals" id="crystal3" src="assets/images/3star.jpg">
-            <img class="crystals" id="crystal4" src="assets/images/4star.jpg">
-            <img class="crystals" id="crystal5" src="assets/images/5star.jpg">
-            <img class="crystals" id="crystal6" src="assets/images/6star.jpg">
-            <img class="crystals" id="crystal7" src="assets/images/7star.jpg">
+            <img class="dragonballs" id="dragonball1" src="assets/images/1star.jpg">
+            <img class="dragonballs" id="dragonball2" src="assets/images/2star.jpg">
+            <img class="dragonballs" id="dragonball3" src="assets/images/3star.jpg">
+            <img class="dragonballs" id="dragonball4" src="assets/images/4star.jpg">
+            <img class="dragonballs" id="dragonball5" src="assets/images/5star.jpg">
+            <img class="dragonballs" id="dragonball6" src="assets/images/6star.jpg">
+            <img class="dragonballs" id="dragonball7" src="assets/images/7star.jpg">
         </div>
     </div>
+
     <div class="panel panel-default guesscount">
         <div class="panel-heading">
             <h3 class="panel-title">Your Guess Count</h3>
@@ -67,14 +73,9 @@
     </div>
 
     <img src="assets/images/Shenronwish.jpg" class="img-responsive" id="wish" alt="Responsive image">
-    <img src="assets/images/Porungawish.jpg" class="img-responsive" id="wishes" alt="Responsive image">
 
-    <!-- <audio controls>
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="horse.mp3" type="audio/mpeg">
-    </audio> -->
-
-    <script src="assets/javascript/game2.js"></script>
+    <footer id="image_credit">Background image provided by: https://vignette.wikia.nocookie.net/dbz-dokkanbattle/images/2/20/Dragonball_z_by_goddessmechanic2-d7paus4.jpg/revision/latest?cb=20161105103343</footer>
+    <script src="assets/javascript/game.js"></script>
 
 </body>
 

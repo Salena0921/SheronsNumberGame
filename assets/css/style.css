@@ -1,31 +1,86 @@
+/*General*/
 body{
-    background-image: url("../images/Shenronbkg.jpg");
-    color: white;
+    background-image: url("../images/DragonballZbck.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px 975px;  
+    
 }
 
-h3{
+/*Titles, captions, and footer */
+#game_title{
     text-align: center;
-    font-size: 60px;
     font-family: 'Sonsie One', cursive;
+    font-size: 60px;    
+    position: relative;
+    top: 50px;
 }
 
-#caption{
+#game_caption{
     text-align: center;
+    font-family: 'Sonsie One', cursive; 
     font-size: 40px;
     color: red;
-    font-family: 'Sonsie One', cursive;
+    position: relative;
+    top: 75px;
+    
 }
 
-.instruction{
-   font-size: 20px;
-   font-family: 'Lobster', cursive;
-   color: grey;
-   position: fixed;
-   width: 400px;
+/* Instructions */
+#instructions_title{
+    background-color: yellow;
+    color: red;
+    font-family: 'Sonsie One', cursive; 
+    font-size: 20px;
+    float: right;
+    position: relative;
+    right: 290px;
+    top: 30px;
+    height: 50px;
+    width: 200px;
+ }
+
+ .modal {    
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 650px;
+    top: 50px;  
+    width: 600px;
+    height: 400px;    
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
+.modal-content {
+    background-color: #fefefe;
+    font-size: 22px;
+    text-align: center;      
+    border: 1px solid #888;
+    width: 500px;  
+    padding: 20px;
+    position: relative;
+    top: 25px;
+    left: 25px;  
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Score Area */
 .score{
-    text-align: center;
+    text-align: left;
     position: relative;
     top: 25px;
     font-size: 30px;
@@ -33,16 +88,50 @@ h3{
     font-family: 'Sonsie One', cursive;
 }
 
-.crystals{
+#powerup_title{
+    position: relative;
+    top: 45px;
+    left: 50px;
+}
+
+/* Number to Guess and your Guess Count */
+#guessing_number{
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 125px;
+}
+
+#numbertoguess{
+    position: relative;
+    top: 25px;
+    right: 100px;
+}
+
+.guesscount{
+    text-align: center;
+    position: relative;
+    top: 250px;
+    left: 25px;
+    font-family: 'Sonsie One', cursive;
+    font-size: 35px;
+}
+
+#totalcount{
+    position: relative;
+    top: 25px;
+}
+
+/* Dragonballs */
+.dragonballs{
     width: 150px;
     height: 150px;
     position: relative;
     left: 425px;
-    top: 150px;
+    top: 175px;
 }
 
-#wish,
-#wishes{
+#wish{
     width: 1000px;
     height: 650px;
     position: absolute;
@@ -52,14 +141,13 @@ h3{
     font-family: 'Sonsie One', cursive;
 }
 
-.guesscount{
-    position: relative;
-    bottom: -155px;
-    font-family: 'Sonsie One', cursive;
-}
 
-#totalcount{
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Sonsie One', cursive;
+ /* Footer */
+#image_credit {
+    color: rgb(78, 76, 76);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
 }
